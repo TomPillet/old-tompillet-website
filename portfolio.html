@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio - Tom Pillet</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<script type="text/javascript" src="js.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Présentation</a>
+					</li>
+					<li style="border-bottom: 2px solid #FBAC18">
+						<a href="portfolio.html">Portfolio</a>
+					</li>
+					<li>
+						<a href="recommandations.html">Recommandations</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h1><span>T</span>om Pille<span>t</span></h1>
+		</header>
+		<div class="page">
+			<div class="sommaire">
+				<h2>s<span>o</span>mmair<span>e</span></h2>
+				<div class="taille-sommaire">
+					<div id="sommaire-link"><a href="#linkto_blender">Blender</a></div>
+					<div id="sommaire-link"><a href="#linkto_pixelart">Pixel Art</a></div>
+					<div id="sommaire-link"><a href="#linkto_mini-rpg">Mini-RPG</a></div>
+					<div id="sommaire-link"><a href="#linkto_articles">Articles</a></div>
+					<div id="sommaire-link"><a href="#linkto_cartes">Cartes</a></div>
+				</div>
+				<div class="border-line"></div>
+			</div>
+
+			<div id="linkto_blender" class="blender">
+				<h2>M<span>e</span>s tra<span>v</span>aux s<span>u</span>r Blen<span>d</span>er</h2>
+				<video autoplay="" loop="">
+					<source src="medias/blender/mouvements.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<div class="diapo">
+					<button id="btn-gauche" onclick="nav_blender('left');"> < </button>
+					<img id="blender" src="medias/blender/bureau.png">
+					<button id="btn-droite" onclick="nav_blender('right');"> > </button>
+				</div>
+				<div class="border-line"></div>
+			</div>
+
+			<div id="linkto_pixelart" class="pixelart">
+				<h2>Q<span>u</span>el<span>q</span>ues <span>u</span>ns de <span>m</span>es P<span>i</span>xel <span>A</span>rts</h2>
+				<div class="diapo">
+					<button id="btn-gauche" onclick="nav_pixelart('left');"> < </button>
+					<img id="pixelart" src="medias/pixel_art/space.png">
+					<button id="btn-droite" onclick="nav_pixelart('right');"> > </button>
+				</div>
+				<div class="diapo">
+					<button id="btn-gauche" onclick="nav_pixelart_gif('left');"> < </button>
+					<img id="pixelart_gif" src="medias/pixel_art/pumpkin-transform.gif">
+					<button id="btn-droite" onclick="nav_pixelart_gif('right');"> > </button>
+				</div>
+				<div class="border-line"></div>
+			</div>
+
+			<div id="linkto_mini-rpg" class="mini-rpg">
+				<h2>M<span>o</span>n m<span>i</span>ni-<span>r</span>pg <span>s</span>ur go<span>d</span>ot</h2>
+				<a href="https://tampoulet.github.io/" target="_blank"><img style="width: 100%;" src="medias/mini-rpg.png"></a>
+				<p>Très curieux à l'idée de découvrir le monde de la programmation de jeu vidéo, j'ai profité de mes vacances d'été pour m'intéresser au moteur de jeu Godot Engine afin de travailler sur mon tout premier jeu en 2D, notamment à l'aide d'une série de tutoriels réalisés par HeartBeast, que vous pouvez retrouver<a target="_blank" href="https://www.youtube.com/watch?v=mAbG8Oi-SvQ&list=PL9FzW-m48fn2SlrW0KoLT4n5egNdX-W9a">ici</a>.</p>
+					<p>S'il vous intrigue de tester mon jeu, vous pouvez cliquer sur l'image ci-dessus pour y accéder (fonctionne sur PC uniquement). Je vous laisse ci-dessous la liste des commandes de jeu :</p>
+					<p style="text-align: center; font-style: italic;">Z / Flèche haut = aller en haut ; Q / Flèche gauche = aller à gauche.
+					<br>S / Flèche bas = aller en bas ; D / Flèche droite = aller à droite.
+					<br>Espace / Clic gauche = attaquer ; Shift / Clic droit : faire une roulade
+					<br><span style="font-weight: bold; color: red; font-style: normal;">/!\ Pensez à cliquer sur l'écran avant de vous déplacer, afin d'initialiser le jeu /!\</span></p>
+				<div class="border-line"></div>
+			</div>
+
+			<div id="linkto_articles" class="articles">
+				<h2>D<span>e</span>s ar<span>t</span>ic<span>l</span>es In<span>d</span>esi<span>g</span>n</h2>
+				<div class="diapo">
+					<button id="btn-gauche" onclick="nav_articles('left');"> < </button>
+					<a target="_blank" id="pdf-articles" href="medias/articles/article-exo-v1.pdf"><img style="filter: blur(1rem)" id="img-articles" src="medias/articles/exo-v1.jpg"></a>
+					<button id="btn-droite" onclick="nav_articles('right');"> > </button>
+				</div>
+				<p id="sous-titre-articles" style="text-align: center; font-style: italic;">- Article d'exoplanète 1 -</p>
+				<p style="text-align: center;">Cliquer sur l'image pour ouvrir le PDF</p>
+				<div class="border-line"></div>
+			</div>
+
+			<div id="linkto_cartes" class="cartes">
+				<h2><span>C</span>ar<span>t</span>es d<span>e</span> j<span>e</span>u de s<span>o</span>cié<span>t</span>é</h2>
+				<div class="diapo">
+					<button id="btn-gauche" onclick="nav_cartes('left');"> < </button>
+					<img id="cartes" src="medias/jeu_de_societe/cartes_events/blood moon.png">
+					<button id="btn-droite" onclick="nav_cartes('right');"> > </button>
+				</div>
+				<div class="border-line"></div>
+			</div>
+		</div>
+
+		<footer>© 2020 - PILLET Tom</footer>
+	</body>
+</html>
