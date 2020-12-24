@@ -40,7 +40,7 @@ header {
 	background-color: #0e1111;
 	margin: 0px;
 	width: 100%;
-	
+	position: fixed;
 	font-family: GoodMood;
 	color: white;
 	position: inline;
@@ -111,9 +111,7 @@ h2 {
 }
 
 #moi {
-	width: 25%;
 	margin: 0.5% 5%;
-	position: relative;
 	float: left;
 	box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .1); /* changer pour responsive */
 }
