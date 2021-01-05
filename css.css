@@ -40,10 +40,9 @@ header {
 	background-color: #0e1111;
 	margin: 0px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	font-family: GoodMood;
 	color: white;
-	position: inline;
 }
 
 nav {	
