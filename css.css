@@ -103,13 +103,6 @@ h2 {
 	background-color: #FFF;
 }
 
-p {
-	font-family: CaviarDreams;
-	font-size: 1.2em;
-	text-align: justify;
-	text-indent: 5%;
-}
-
 #cv {
 	width: 100%;
 	box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .1); /* changer pour responsive */
@@ -117,22 +110,24 @@ p {
 
 #moi {
 	margin: 0.5% 5%;
-	flex: 20%;
+	height: 100%;
 	float: left;
 	box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .1); /* changer pour responsive */
 }
 
+p {
+	font-family: CaviarDreams;
+	font-size: 1.2em;
+	text-align: justify;
+	text-indent: 5%;
+}
+
+.presentation > p {
+	margin-right: 5%;
+}
+
 .presentation {
 	margin: 2% 0%;
-}
-
-.content {
-	display: flex;	
-}
-
-.presentation > .content > p {
-	flex: 55%;
-	margin-right: 5%;
 }
 
 .page > div {
