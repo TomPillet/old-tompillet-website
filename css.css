@@ -126,7 +126,7 @@ p {
 	margin: 2% 0%;
 }
 
-.presentation > content > p {
+.presentation > .content > p {
 	flex: 55%;
 	margin-right: 5%;
 }
