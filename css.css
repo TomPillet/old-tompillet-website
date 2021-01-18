@@ -111,6 +111,7 @@ h2 {
 
 #moi {
 	margin: 0.5% 5%;
+	height: 100%;
 	float: left;
 	box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .1); /* changer pour responsive */
 }
