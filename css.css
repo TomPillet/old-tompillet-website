@@ -124,10 +124,9 @@ p {
 
 .presentation {
 	margin: 2% 0%;
-	display: flex;
 }
 
-.presentation > p {
+.presentation > content > p {
 	flex: 55%;
 	margin-right: 5%;
 }
