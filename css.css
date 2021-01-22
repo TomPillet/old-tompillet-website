@@ -81,16 +81,16 @@ nav > ul > li > a {
 /*  MODIFICATIONS DES TITRES  */
 
 h1 {
-	margin: auto;
 	text-align: center;
-	font-size: 4em;
+	margin: 0;
+	font-size: 4.4em;
 }
 
 h2 {
+	text-align: center;
 	margin-bottom: 1%;
 	margin-top: 2%;
-	text-align: center;
-	font-size: 3em;
+	font-size: 3.4em;
 	font-family: GoodMood;
 }
 
@@ -109,9 +109,27 @@ h2 {
 }
 
 #moi {
-	margin: 0.5% 5%;
-	height: 100%;
+	width: 32%;
+	margin: 0.5% 6%;
 	box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .1); /* changer pour responsive */
+}
+
+.presentation-content {
+	display: flex;
+	align-items: center;
+}
+
+.presentation-content > p {
+	width: 50%;
+	margin: 1% 6%;
+}
+
+
+
+.page > div {
+	width: 76%;
+	padding: 0% 12%;
+	margin: 4% 0%;
 }
 
 p {
@@ -119,19 +137,6 @@ p {
 	font-size: 1.2em;
 	text-align: justify;
 	text-indent: 5%;
-}
-
-.presentation > p {
-	margin-right: 5%;
-}
-
-.presentation {
-	margin: 2% 0%;
-}
-
-.page > div {
-	padding: 0% 12%;
-	margin: 4% 0%;
 }
 
 span {
@@ -156,9 +161,15 @@ span {
 }
 
 .reseaux > a > img {
+	filter: saturate(0);
 	width: 20%;
 	display: inline;
 	margin: 0% 6.3%; /* chager à 4% pour la responsiveness */
+	transition: filter 0.6s;
+}
+
+.reseaux > a > img:hover {
+	filter: saturate(1);
 }
 
 .diapo {

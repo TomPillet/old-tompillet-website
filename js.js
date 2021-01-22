@@ -17,27 +17,6 @@ var tabl_blender = ["bureau.png", "affiche_donuts.jpg", "Donuts.jpg", "voiture.p
 var i=0, j=0, g=0, h=0, k=0, secu1=0, secu2=0, secu3=0;
 
 
-// RESEAUX SOCIAUX
-function change_img(id) {
-	if (id == "github") {
-		github.src = "medias/github.png";
-	} else if (id == "youtube") {
-		youtube.src = "medias/youtube.png";
-	} else if (id == "twitter") {
-		twitter.src = "medias/twitter.png";
-	}
-}
-
-function reset_img(id) {
-	if (id == "github") {
-		github.src = "medias/github-noir.png";
-	} else if (id == "youtube") {
-		youtube.src = "medias/youtube-noir.png";
-	} else if (id == "twitter") {
-		twitter.src = "medias/twitter-noir.png";	
-	}
-}
-
 // DIAPORAMA POUR BLENDER 
 function nav_blender(sens) {
 	var img = document.getElementById("blender");
